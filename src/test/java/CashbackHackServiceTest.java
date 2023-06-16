@@ -15,11 +15,11 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void calcCashbackTest(){
+    public void calcCashbackTestEquality(){
         CashbackHackService service=new CashbackHackService();
-        int amaunt=900;
+        int amaunt=1000;
         int actual = service.remain(amaunt);
-        int expected= 100;
+        int expected= 0;
         assertEquals(actual,expected);
     }
 }
